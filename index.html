@@ -1,53 +1,10 @@
-<!doctype html>
-<html lang="th">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
-  <meta name="theme-color" content="#17141d" />
-  <meta name="description" content="PROFACE STUDIO — Blackout Fabrics digital flipbook catalog" />
-  <title>Blackout Fabrics | PROFACE STUDIO</title>
-  <link rel="preload" href="assets/pages/page-01.webp" as="image" />
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
-  <div class="app">
-    <header class="header">
-      <a class="brand" href="#page=1" aria-label="PROFACE STUDIO, กลับไปหน้าแรก">
-        <span class="brand-mark">P<span class="brand-dot">.</span></span>
-        <span class="brand-copy"><b>PROFACE</b><small>STUDIO · FABRIC COLLECTION</small></span>
-      </a>
-      <span class="header-center">THE FABRIC LIBRARY <span class="divider-vertical"></span> VOL. 01</span>
-      <div class="header-actions">
-        <button id="shareBtn" class="head-btn" type="button" title="คัดลอกลิงก์"><svg viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7.1 0l3-3a5 5 0 0 0-7.1-7.1l-1.7 1.7M14 11a5 5 0 0 0-7.1 0l-3 3a5 5 0 0 0 7.1 7.1l1.7-1.7"/></svg><span>แชร์</span></button>
-        <a class="download-btn" href="assets/Blackout-Fabrics.pdf" download="Blackout-Fabrics.pdf"><svg viewBox="0 0 24 24"><path d="M12 3v13m-5-5 5 5 5-5M4 17v3h16v-3"/></svg><span>ดาวน์โหลด PDF</span></a>
-      </div>
-    </header>
-    <main class="main">
-      <aside class="intro"><div class="eyebrow"><span></span> PROFACE DIGITAL CATALOG</div><h1>BLACKOUT<br/><em>FABRICS</em></h1><p>สำรวจคอลเลกชันผ้าม่านแบล็กเอาต์<br/>ผ่านประสบการณ์พลิกหน้าหนังสือออนไลน์</p><div class="intro-rule"></div><div class="intro-bottom">COLLECTION / 2026 <span>11 PAGES</span></div></aside>
-      <section class="viewer" aria-label="หนังสือแคตตาล็อก">
-        <div class="viewer-top"><div><span class="online-dot"></span> DIGITAL EDITION</div><div id="viewModeLabel">DOUBLE-PAGE VIEW</div></div>
-        <div class="book-frame">
-          <button id="prevEdge" class="edge edge-left" title="หน้าก่อนหน้า" aria-label="หน้าก่อนหน้า">‹</button>
-          <div class="book-shadow"><div id="book" class="book" aria-live="polite">
-            <div id="leftPage" class="page left"><div class="blank-page"><span>PROFACE STUDIO</span><strong>THE BEAUTY<br/>OF THE CURTAIN.</strong></div></div>
-            <div id="rightPage" class="page right"><img src="assets/pages/page-01.webp" alt="Blackout Fabrics หน้า 1" draggable="false" /></div>
-            <div id="turning" class="turning" aria-hidden="true"></div>
-          </div></div>
-          <button id="nextEdge" class="edge edge-right" title="หน้าถัดไป" aria-label="หน้าถัดไป">›</button>
-        </div>
-        <div class="controls">
-          <div class="nav-group"><button class="icon-btn" id="firstBtn" title="หน้าแรก" aria-label="หน้าแรก"><svg viewBox="0 0 24 24"><path d="M5 4v16M19 5 9 12l10 7" /></svg></button><button class="icon-btn" id="prevBtn" title="ก่อนหน้า" aria-label="ก่อนหน้า"><svg viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></svg></button><span id="pageLabel" class="page-count">01 <i>/</i> 11</span><button class="icon-btn" id="nextBtn" title="ถัดไป" aria-label="ถัดไป"><svg viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></svg></button><button class="icon-btn" id="lastBtn" title="หน้าสุดท้าย" aria-label="หน้าสุดท้าย"><svg viewBox="0 0 24 24"><path d="M19 4v16M5 5l10 7-10 7"/></svg></button></div>
-          <div class="slider-wrap"><input id="pageSlider" type="range" min="1" max="11" value="1" aria-label="เลือกหน้าหนังสือ" /></div>
-          <div class="tools"><button class="icon-btn" id="thumbBtn" title="เลือกหน้าจากภาพตัวอย่าง" aria-label="ภาพตัวอย่าง"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg></button><button class="icon-btn" id="zoomBtn" title="ขยายดูหน้า" aria-label="ขยายหน้า"><svg viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5M8 10.5h5m-2.5-2.5v5"/></svg></button><button class="icon-btn" id="fullscreenBtn" title="เต็มหน้าจอ" aria-label="เต็มหน้าจอ"><svg viewBox="0 0 24 24"><path d="M8 3H3v5m13-5h5v5M3 16v5h5m13-5v5h-5"/></svg></button></div>
-        </div>
-        <div id="thumbPanel" class="thumb-panel" hidden><div class="thumb-head"><strong>เลือกหน้า</strong><button id="closeThumb" aria-label="ปิด">×</button></div><div id="thumbGrid" class="thumb-grid"></div></div>
-      </section>
-      <aside class="side-caption"><span>01 — 11</span><span>CURATED FABRIC<br/>COLLECTION</span></aside>
-    </main>
-    <footer><span>© PROFACE STUDIO. ALL RIGHTS RESERVED.</span><span>USE ARROW KEYS TO TURN PAGES <span class="footer-arrow">← →</span></span></footer>
-  </div>
-  <div class="lightbox" id="lightbox" hidden><div class="lightbox-bar"><div><strong>BLACKOUT FABRICS</strong><span id="lightboxLabel">หน้า 1 / 11</span></div><div><button id="zoomOut" aria-label="ย่อ">−</button><span id="zoomLevel">100%</span><button id="zoomIn" aria-label="ขยาย">+</button><button id="closeZoom" class="close-zoom" aria-label="ปิด">×</button></div></div><div id="zoomViewport" class="zoom-viewport"><img id="zoomImage" alt="ภาพขยายหน้าหนังสือ" draggable="false" /></div></div>
-  <div id="toast" class="toast" role="status"></div>
-  <script src="script.js"></script>
-</body>
-</html>
+<!doctype html><html lang="th"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f7f7f8"><meta name="description" content="PROFACE STUDIO | Blackout fabrics interactive catalog"><title>Blackout Fabrics — PROFACE STUDIO</title><link rel="preload" href="assets/pages/page-01.webp" as="image"><link rel="stylesheet" href="styles.css"></head><body>
+<div class="site"><header class="topbar"><div class="identity"><div class="brand-icon">P<span>·</span></div><div class="brand"><strong>PROFACE <span>STUDIO</span></strong><small>Digital fabric library</small></div></div><div class="head-center"><span class="online"></span> BLACKOUT COLLECTION <span class="muted">/ 2026</span></div><div class="head-right"><button class="btn minimal" id="share" title="คัดลอกลิงก์">↗ <span>แชร์</span></button><a class="btn download" href="assets/Blackout-Fabrics.pdf" download>↓ <span>ดาวน์โหลด PDF</span></a></div></header>
+<main><div class="heading"><div><div class="eyebrow">THE FABRIC COLLECTION <span class="line"></span> VOL.01</div><h1>Blackout <span>Fabrics</span></h1><p>เลือกชมเฉดสีและรายละเอียดผ้าม่านได้อย่างชัดเจน · พลิกหน้าราวกับหนังสือจริง</p></div><div class="edition">CATALOGUE <b>01 / 11</b></div></div>
+<section class="workspace"><div class="viewer-head"><div class="viewer-title"><span class="small-icon">▤</span> <span>CATALOG VIEWER</span> <span class="tag">INTERACTIVE</span></div><div class="viewer-info"><span class="green-dot"></span><span id="layoutLabel">แสดงสองหน้า</span></div></div>
+<div class="stage" id="stage"><button class="side-arrow prev" id="edgePrev" aria-label="หน้าก่อนหน้า">‹</button><div id="book" class="book"><div id="left" class="sheet left"><div class="blank"><div>PROFACE STUDIO</div><b>THE BEAUTY<br>OF THE CURTAIN.</b></div></div><div id="right" class="sheet right"><img src="assets/pages/page-01.webp" alt="หน้า 1"></div><div id="flip" class="flip"></div></div><button class="side-arrow next" id="edgeNext" aria-label="หน้าถัดไป">›</button><div class="stage-hint">‹ &nbsp; คลิกหรือปัดเพื่อพลิกหน้า &nbsp; ›</div></div>
+<div class="toolbar"><div class="navigate"><button id="first" class="tool" title="หน้าแรก">⇤</button><button id="previous" class="tool" title="หน้าก่อน">‹</button><div class="page-indicator"><b id="current">01</b><span>/</span>11</div><button id="following" class="tool" title="หน้าถัดไป">›</button><button id="last" class="tool" title="หน้าสุดท้าย">⇥</button></div><div class="range"><input id="slider" type="range" min="1" max="11" value="1" aria-label="เลือกหน้า"></div><div class="actions"><button id="thumb" class="tool" title="ภาพรวมทุกหน้า">▦</button><button id="sound" class="tool active" title="ปิด/เปิดเสียงพลิกหน้า">♫</button><button id="magnify" class="tool zoomAction" title="ซูมภาพจาก PDF ต้นฉบับ">⌕ <span>ซูมคมชัด</span></button><button id="full" class="tool" title="เต็มหน้าจอ">⛶</button></div></div>
+<div class="thumbs" id="thumbs" hidden><div class="thumbs-heading">เลือกหน้าที่ต้องการ <button id="closeThumb">×</button></div><div id="thumbList" class="thumb-list"></div></div></section>
+<div class="bottomline"><span>อ่านรายละเอียดสินค้าได้ชัดขึ้นด้วยปุ่ม <b>ซูมคมชัด</b> ซึ่งเปิดไฟล์ PDF ต้นฉบับ</span><span>PROFACE STUDIO · DIGITAL CATALOGUE</span></div></main></div>
+<div id="zoomModal" class="modal" hidden><div class="modalbar"><div class="modal-title"><b>BLACKOUT FABRICS</b><span id="zoomPage">หน้า 1 / 11 · PDF QUALITY</span></div><div class="modaltools"><button id="zOut" title="ย่อ">−</button><span id="zScale">100%</span><button id="zIn" title="ขยาย">+</button><button id="zFit" title="พอดีจอ">พอดีจอ</button><a href="assets/Blackout-Fabrics.pdf" target="_blank" rel="noopener" title="เปิด PDF ต้นฉบับ">เปิด PDF ↗</a><button id="zClose" class="close" title="ปิด">×</button></div></div><div class="zoom-body" id="zoomBody"><div id="zoomStatus" class="zoom-status">กำลังเตรียมหน้า PDF ความละเอียดสูง…</div><canvas id="zoomCanvas"></canvas><iframe id="pdfFallback" title="PDF ต้นฉบับ" hidden></iframe></div><div class="zoom-note">เลื่อนเพื่อดูรายละเอียด · Ctrl + ลูกกลิ้งเมาส์เพื่อซูม · เปิด PDF โดยตรงได้หากการแสดงผลไม่รองรับ</div></div>
+<div id="toast" class="toast" role="status"></div><script src="script.js"></script></body></html>
